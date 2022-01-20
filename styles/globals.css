@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html[lang="en"] {
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+
+html[lang="ar"] {
+  font-family: ds, sans-serif;
 }
 
 a {
@@ -13,4 +27,47 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.font-mono {
+  font-family: "Space Mono", source-code-pro, monospace;
+}
+
+@layer base {
+  html {
+    @apply transition-all scroll-smooth scroll-p-24 scrollbar-thin scrollbar-thumb-nord3;
+  }
+
+  body {
+    @apply dark:bg-nord0 dark:text-nord4 bg-nord4 text-nord0 dark:selection:bg-nord7 selection:bg-nord9 selection:text-nord1 selection:bg-opacity-75;
+  }
+
+  section,
+  main {
+    @apply h-screen px-[auto];
+  }
+
+  section p,
+  section ul {
+    @apply py-2 font-mono text-xl;
+  }
+
+  section h1 {
+    @apply mb-6;
+  }
+
+  .bg-nord-gradient {
+    @apply bg-gradient-to-r dark:from-nord14 dark:to-nord10 from-nord1 to-nord10;
+  }
+
+  .link {
+    @apply underline underline-offset-2 dark:text-nord8 text-nord3;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

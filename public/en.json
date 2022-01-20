@@ -1,0 +1,111 @@
+{
+  "links": {
+    "github": "https://github.com/BasicPixel",
+    "repo": "https://github.com/BasicPixel/typistt",
+    "twitter": "https://twitter.com/pQudah",
+    "dev": "https://dev.to/basicpixel"
+  },
+  "navbar": {
+    "name": "Osama AlQudah",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "heading": "I am Osama, a full-stack web developer."
+  },
+  "about": {
+    "body": [
+      {
+        "content": "Assalamu Alaikum! My name is Osama Mohammed AlQudah (or BasicPixel), and I am a 16-year-old self-taught full-stack web developer from Jordan."
+      },
+      {
+        "content": "I am experienced in both front-end and back-end web development, using modern web frameworks and libraries, such as React, Next.js, Django, Tailwind CSS, and more."
+      },
+      {
+        "content": "My first experience with programming was late 2020 during lockdown, by first taking Harvard's CS50, then CS50's Web track."
+      },
+      {
+        "content": "I am actively learning and working on new projects. Currently learning mobile development with Flutter."
+      },
+      {
+        "content": "Recently, I started writing blog posts and tutorials on dev.to as a hobby."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "bloggr",
+      "desc": "a blog where anyone can post anonymously with simplicity and power, supports markdown.",
+      "demo": "https://bloggr.vercel.app/",
+      "repo": "https://github.com/BasicPixel/bloggr",
+      "stack": "Next.js, TailwindCSS"
+    },
+    {
+      "name": "iffa-quotes",
+      "desc": "Random Islamic quotes about \"Iffa\"",
+      "demo": "https://iffa-quotes.vercel.app/",
+      "repo": "https://github.com/BasicPixel/iffa-quotes-frontend",
+      "stack": "React, TailwindCSS, Django REST Framework"
+    },
+    {
+      "name": "typistt",
+      "desc": "Simple typing practice / test website with different modes and settings",
+      "demo": "https://typistt.vercel.app/",
+      "repo": "https://github.com/BasicPixel/typistt",
+      "stack": "React, Tailwind"
+    },
+    {
+      "name": "marknote",
+      "desc": "(Currently offline) A minimalistic markdown note-taking application. Made as a CS50 Web Final Project.",
+      "demo": "https://marknote-frontend.vercel.app/",
+      "repo": "https://github.com/BasicPixel/marknote",
+      "stack": "React, Django REST Framework"
+    },
+    {
+      "name": "task50",
+      "desc": "a simple and elegant temporary to-do list. My first ever project.",
+      "demo": "https://basicpixel.github.io/task50/",
+      "repo": "https://github.com/BasicPixel/task50",
+      "stack": "HTML, CSS, JS"
+    },
+    {
+      "name": "py-yt-downloader",
+      "desc": "Python CLI / GUI YouTube downloader. supports both videos and playlists.",
+      "demo": "https://github.com/BasicPixel/py-yt-downloader",
+      "repo": "https://github.com/BasicPixel/py-yt-downloader",
+      "stack": "Python"
+    },
+    {
+      "name": "django-commerce",
+      "desc": "Fake e-commerce website made with Django. Made for CS50 Web 2020 week 4.",
+      "demo": "https://django-techshop.herokuapp.com/",
+      "repo": "https://github.com/BasicPixel/django-commerce",
+      "stack": "Django"
+    },
+    {
+      "name": "django-mail",
+      "desc": "Django fake mail client. Made for CS50 Web 2020 week 6",
+      "demo": "https://cs50w-mail.herokuapp.com/",
+      "repo": "https://github.com/BasicPixel/django-mail",
+      "stack": "Django"
+    },
+    {
+      "name": "mdwiki",
+      "desc": "Django wikipedia-like website with Markdown support. Made for CS50 Web 2020 week 3",
+      "demo": "https://django-md-wiki.herokuapp.com/",
+      "repo": "https://github.com/BasicPixel/mdwiki",
+      "stack": "Django"
+    }
+  ],
+  "contact": {
+    "info": "For any purposes, you can reach me at my email, Twitter, or on Telegram, which I am most active on.",
+    "email": "Email: osama.mo.qudah@gmail.com",
+    "tgLink": "https://t.me/qudah",
+    "telegram": "Telegram: @qudah",
+    "twitter": "Twitter: @pqudah"
+  },
+  "footer": {
+    "body": ["Made with ", " using Next and Tailwind."]
+  }
+}
