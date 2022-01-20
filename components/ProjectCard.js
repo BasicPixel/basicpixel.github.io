@@ -1,4 +1,4 @@
-const Project = () => {
+const ProjectCard = () => {
   return (
     <div>
       <h1></h1>
@@ -6,4 +6,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectCard;
