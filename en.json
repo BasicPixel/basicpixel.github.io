@@ -30,6 +30,27 @@
   },
   "projects": [
     {
+      "name": "typistt",
+      "desc": "Simple typing practice / test website with different modes and settings",
+      "demo": "https://typistt.vercel.app/",
+      "repo": "https://github.com/BasicPixel/typistt",
+      "stack": "React, TailwindCSS"
+    },
+    {
+      "name": "django-commerce",
+      "desc": "Fake e-commerce website made with Django.",
+      "demo": "https://django-techshop.herokuapp.com/",
+      "repo": "https://github.com/BasicPixel/django-commerce",
+      "stack": "Django"
+    },
+    {
+      "name": "django-network",
+      "desc": "Django fake social network made for CS50 Web.",
+      "demo": "https://cs50web-network.herokuapp.com/",
+      "repo": "https://github.com/BasicPixel/django-network",
+      "stack": "Django"
+    },
+    {
       "name": "bloggr",
       "desc": "Markdown-supported blog where anyone can post anonymously with simplicity and power.",
       "demo": "https://bloggr.vercel.app/",
@@ -42,20 +63,6 @@
       "demo": "https://iffa-quotes.vercel.app/",
       "repo": "https://github.com/BasicPixel/iffa-quotes-frontend",
       "stack": "React, TailwindCSS, Django REST Framework"
-    },
-    {
-      "name": "typistt",
-      "desc": "Simple typing practice / test website with different modes and settings",
-      "demo": "https://typistt.vercel.app/",
-      "repo": "https://github.com/BasicPixel/typistt",
-      "stack": "React, Tailwind"
-    },
-    {
-      "name": "marknote",
-      "desc": "(Currently offline) A minimalistic markdown note-taking application.",
-      "demo": "https://marknote-frontend.vercel.app/",
-      "repo": "https://github.com/BasicPixel/marknote",
-      "stack": "React, Django REST Framework"
     },
     {
       "name": "task50",
@@ -72,13 +79,6 @@
       "stack": "Python"
     },
     {
-      "name": "django-commerce",
-      "desc": "Fake e-commerce website made with Django.",
-      "demo": "https://django-techshop.herokuapp.com/",
-      "repo": "https://github.com/BasicPixel/django-commerce",
-      "stack": "Django"
-    },
-    {
       "name": "django-mail",
       "desc": "Django fake mail client.",
       "demo": "https://cs50w-mail.herokuapp.com/",
@@ -91,6 +91,13 @@
       "demo": "https://django-md-wiki.herokuapp.com/",
       "repo": "https://github.com/BasicPixel/mdwiki",
       "stack": "Django"
+    },
+    {
+      "name": "marknote",
+      "desc": "(Currently offline) A minimalistic markdown note-taking application.",
+      "demo": "https://marknote-frontend.vercel.app/",
+      "repo": "https://github.com/BasicPixel/marknote",
+      "stack": "React, Django REST Framework"
     }
   ],
   "connect": {
