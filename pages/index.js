@@ -10,8 +10,6 @@ import Navbar from "../components/Navbar";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Home({ data }) {
-  console.log(data);
-
   return (
     <div className="w-screen">
       <Navbar data={data} />
@@ -150,7 +148,9 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const req = await fetch(`http://localhost:3000/api/en`);
+  const req = await fetch(
+    `https://raw.githubusercontent.com/BasicPixel/basicpixel.github.io/main/public/en.json`
+  );
   const data = await req.json();
 
   return {
