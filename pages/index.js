@@ -150,7 +150,7 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const req = await fetch(`http://localhost:3000/en.json`);
+  const req = await fetch(`http://localhost:3000/api/en`);
   const data = await req.json();
 
   return {
