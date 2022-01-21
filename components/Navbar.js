@@ -9,7 +9,7 @@ const Navbar = ({ data }) => {
   const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
 
   return (
-    <nav className="sticky top-0 w-full p-3 border-b border-opacity-40 backdrop-blur-md border-nord3">
+    <nav className="sticky top-0 w-full p-3 border-b border-opacity-40 backdrop-blur-md border-nord3 overflow-hidden">
       {/* Flex container */}
       <div className="flex items-center justify-between">
         {/* Navbar title */}
@@ -30,17 +30,11 @@ const Navbar = ({ data }) => {
         <ul className="items-center hidden gap-4 px-4 md:flex justify-self-end">
           <NavbarItem href={"#about"} content={data.navbar.about} />
           <NavbarItem href={"#projects"} content={data.navbar.projects} />
-          <NavbarItem href={"#contact"} content={data.navbar.contact} />
+          <NavbarItem href={"#connect"} content={data.navbar.connect} />
           <li className="select-none">|</li>
           <NavbarItem
             href={data.links.dev}
             content={"Blog"}
-            target={"_blank"}
-            rel={"noreferrer"}
-          />
-          <NavbarItem
-            href={data.links.twitter}
-            content={<Twitter />}
             target={"_blank"}
             rel={"noreferrer"}
           />
@@ -66,7 +60,7 @@ const Navbar = ({ data }) => {
         <ul className="mt-2" onClick={toggleMobileMenu}>
           <NavbarItem href={"#about"} content={data.navbar.about} />
           <NavbarItem href={"#projects"} content={data.navbar.projects} />
-          <NavbarItem href={"#contact"} content={data.navbar.contact} />
+          <NavbarItem href={"#connect"} content={data.navbar.connect} />
           <li className="my-2 border-t border-nord3 border-opacity-30" />
           <NavbarItem
             href={data.links.dev}
@@ -75,16 +69,11 @@ const Navbar = ({ data }) => {
             rel={"noreferrer"}
           />
           <NavbarItem
-            href={data.links.twitter}
-            content={<Twitter />}
-            target={"_blank"}
-            rel={"noreferrer"}
-          />
-          <NavbarItem
             href={data.links.github}
             content={<GitHub />}
             target={"_blank"}
             rel={"noreferrer"}
+            aria-label="github"
           />
         </ul>
       </Transition>

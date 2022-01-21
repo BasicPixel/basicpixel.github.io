@@ -1,14 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&family=Tajawal:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
 
 html[lang="en"] {
   font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI,
@@ -17,7 +11,7 @@ html[lang="en"] {
 }
 
 html[lang="ar"] {
-  font-family: ds, sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 a {
@@ -34,9 +28,14 @@ a {
 }
 
 @layer base {
-  html {
-    @apply transition-all scroll-smooth scroll-p-24 scrollbar-thin scrollbar-thumb-nord3;
+  html,
+  body {
+    @apply w-full h-full m-0 p-0 overflow-x-hidden overflow-y-auto transition-all scroll-smooth scroll-p-20 scrollbar-thin scrollbar-thumb-nord3;
   }
+
+  /* html {
+    @apply transition-all scroll-smooth scroll-p-20 scrollbar-thin scrollbar-thumb-nord3 w-full h-full m-0 p-0 overflow-x-hidden overflow-y-auto;
+  } */
 
   body {
     @apply dark:bg-nord0 dark:text-nord4 bg-nord4 text-nord0 dark:selection:bg-nord7 selection:bg-nord9 selection:text-nord1 selection:bg-opacity-75;
@@ -44,7 +43,7 @@ a {
 
   section,
   main {
-    @apply h-screen px-[auto];
+    @apply px-[auto] my-4;
   }
 
   section p,

@@ -7,9 +7,15 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta
           name="description"
-          content="I'm Osama AlQudah, a full-stack web developer"
+          content="I'm Osama AlQudah (BasicPixel), a full-stack web developer"
         />
-        <title>Osama AlQudah</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin
+        ></link>
+        <title>BasicPixel</title>
       </Head>
       <div>
         <Component {...pageProps} />
