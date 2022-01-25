@@ -11,6 +11,7 @@ This repository contains the source code for my personal portfolio / website.
 
 ### Special Thanks to:
 
+- [is-a.dev](https://github.com/is-a-dev/register) for providing a free subdomain.
 - [favicon.io](https://favicon.io) for helping me create a favicon.
 - [Github Pages](https://pages.github.com/) for providing free hosting.
 - [This video](https://youtu.be/yRz8D_oJMWQ) for helping me host Next.js on GH Pages.
