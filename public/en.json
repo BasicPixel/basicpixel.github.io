@@ -18,7 +18,7 @@
   "about": {
     "body": [
       {
-        "content": "Assalamu Alaikum 👋! I am Osama AlQudah (or BasicPixel), a 16-year-old self-taught full-stack web developer from Jordan. I am experienced in front-end and back-end web development with Next.js, django etc..."
+        "content": "Assalamu Alaikum 👋! I am Osama AlQudah (BasicPixel), a 16-year-old self-taught full-stack web developer from Jordan. I am experienced in front-end and back-end web development with Next.js, Django, React, Firebase and more. A proud CS50 student."
       }
     ]
   },
@@ -96,6 +96,6 @@
     "github": "Github"
   },
   "footer": {
-    "body": ["Made with ", " and Next.js and Tailwind."]
+    "body": ["Made with ", ", Next.js and Tailwind."]
   }
 }
