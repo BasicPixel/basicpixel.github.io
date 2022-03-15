@@ -1,15 +1,9 @@
-import { Transition } from "@headlessui/react";
-import { useState } from "react";
-import { Twitter, GitHub, Menu } from "react-feather";
+import { GitHub, Info, Code, Mail, Type } from "react-feather";
 import NavbarItem from "./NavbarItem";
 
 const Navbar = ({ data }) => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-
-  const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
-
   return (
-    <nav className="sticky top-0 w-full p-3 border-b border-opacity-40 backdrop-blur-md border-nord3 overflow-hidden">
+    <nav className="sticky top-0 w-full p-3 overflow-hidden border-b md:px-16 border-opacity-40 backdrop-blur-md border-nord3">
       {/* Flex container */}
       <div className="flex items-center justify-between">
         {/* Navbar title */}
@@ -17,66 +11,36 @@ const Navbar = ({ data }) => {
           <a href="#home">{data.navbar.name}</a>
         </h1>
 
-        {/* Mobile expand button */}
-        <button
-          className="md:hidden"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle Navbar"
-        >
-          <Menu />
-        </button>
-
         {/* Primary nav */}
-        <ul className="items-center hidden gap-4 px-4 md:flex justify-self-end">
-          <NavbarItem href={"#about"} content={data.navbar.about} />
-          <NavbarItem href={"#projects"} content={data.navbar.projects} />
-          <NavbarItem href={"#connect"} content={data.navbar.connect} />
-          <li className="select-none">|</li>
+        <ul className="flex items-center gap-2 px-4 justify-self-end">
+          <NavbarItem title="About" href={"#about"}>
+            <Info />
+          </NavbarItem>
+          <NavbarItem title="Projects" href={"#projects"}>
+            <Code />
+          </NavbarItem>
+          <NavbarItem title="Connect" href={"#connect"}>
+            <Mail />
+          </NavbarItem>
+          <span className="opacity-50 select-none">|</span>
           <NavbarItem
             href={data.links.dev}
-            content={"Blog"}
             target={"_blank"}
             rel={"noreferrer"}
-          />
+            title="Blog"
+          >
+            <Type />
+          </NavbarItem>
           <NavbarItem
             href={data.links.github}
-            content={<GitHub />}
             target={"_blank"}
             rel={"noreferrer"}
-          />
+            title="GitHub"
+          >
+            <GitHub />
+          </NavbarItem>
         </ul>
       </div>
-
-      {/* Mobile menu */}
-      <Transition
-        show={showMobileMenu}
-        enter="transition-transform ease-out duration-500 origin-top transform"
-        enterFrom="transform scale-y-0 h-0"
-        enterTo="transform scale-y-100 h-auto"
-        leave="transition-transform ease-in duration-200"
-        leaveFrom="transform scale-y-100 h-auto"
-        leaveTo="transform scale-y-0 h-0"
-      >
-        <ul className="mt-2" onClick={toggleMobileMenu}>
-          <NavbarItem href={"#about"} content={data.navbar.about} />
-          <NavbarItem href={"#projects"} content={data.navbar.projects} />
-          <NavbarItem href={"#connect"} content={data.navbar.connect} />
-          <li className="my-2 border-t border-nord3 border-opacity-30" />
-          <NavbarItem
-            href={data.links.dev}
-            content={"Blog"}
-            target={"_blank"}
-            rel={"noreferrer"}
-          />
-          <NavbarItem
-            href={data.links.github}
-            content={<GitHub />}
-            target={"_blank"}
-            rel={"noreferrer"}
-            aria-label="github"
-          />
-        </ul>
-      </Transition>
     </nav>
   );
 };

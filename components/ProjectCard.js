@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
           <GitHub className="inline w-8 h-8" />
         </a>
       </div>
-      <p className="text-md">{project.desc}</p>
+      <p>{project.desc}</p>
       <div className="dark:text-nord4 text-nord3">
         Technologies: {project.stack}
       </div>

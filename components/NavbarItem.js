@@ -1,13 +1,13 @@
-const NavbarItem = ({ href, content, className, target, rel }) => {
+const NavbarItem = ({ href, className, target, rel, children, title }) => {
   return (
-    <a href={href} target={target} rel={rel}>
+    <a href={href} target={target} rel={rel} title={title}>
       <li
         className={
-          "p-2 duration-300 rounded dark:hover:bg-nord3 hover:bg-nord6 hover:transition-all " +
+          "p-1 duration-300 rounded dark:hover:bg-nord3 hover:bg-nord6 hover:transition-all " +
           className
         }
       >
-        {content}
+        {children}
       </li>
     </a>
   );

@@ -10,10 +10,6 @@ html[lang="en"] {
     sans-serif;
 }
 
-html[lang="ar"] {
-  font-family: "Tajawal", sans-serif;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -30,15 +26,11 @@ a {
 @layer base {
   html,
   body {
-    @apply w-full h-full m-0 p-0 overflow-x-hidden overflow-y-auto transition-all scroll-smooth scroll-p-20 scrollbar-thin scrollbar-thumb-nord3;
+    @apply p-0 m-0 transition-all scroll-smooth scroll-p-20 scrollbar-thin scrollbar-thumb-nord3;
   }
 
-  /* html {
-    @apply transition-all scroll-smooth scroll-p-20 scrollbar-thin scrollbar-thumb-nord3 w-full h-full m-0 p-0 overflow-x-hidden overflow-y-auto;
-  } */
-
   body {
-    @apply dark:bg-nord0 dark:text-nord4 bg-nord4 text-nord0 dark:selection:bg-nord7 selection:bg-nord9 selection:text-nord1 selection:bg-opacity-75;
+    @apply overflow-clip dark:bg-nord0 dark:text-nord4 bg-nord4 text-nord0 dark:selection:bg-nord7 selection:bg-nord9 selection:text-nord1 selection:bg-opacity-75;
   }
 
   section,
@@ -68,5 +60,18 @@ a {
   .text-gradient {
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#a3be8c, #5e81ac);
+    background-size: 0 2px;
+    background-position: 0 100%;
+    @apply transition-all duration-300 bg-no-repeat border-b-0;
+  }
+
+  .link-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
   }
 }

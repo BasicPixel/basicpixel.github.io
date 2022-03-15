@@ -35,9 +35,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <title>BasicPixel</title>
       </Head>
-      <div>
+      <body>
         <Component {...pageProps} />
-      </div>
+      </body>
     </div>
   );
 }

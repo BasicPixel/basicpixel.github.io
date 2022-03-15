@@ -1,55 +1,38 @@
-import {
-  AtSign,
-  Heart,
-  MessageCircle,
-  Twitter,
-  PenTool,
-  GitHub,
-} from "react-feather";
+import { AtSign, Heart, Send, Twitter, PenTool, GitHub } from "react-feather";
 import Navbar from "../components/Navbar";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Home({ data }) {
   return (
-    <div className="w-screen">
+    <>
       <Navbar data={data} />
 
-      <div className="container p-4 mx-auto xl:w-1/2 md:w-2/3 sm:w-screen">
+      <main className="container p-4 mx-auto xl:w-1/2 md:w-2/3 sm:w-screen">
         {/* Home / Header */}
-        <main
+        <section
           id="home"
-          className="flex flex-col items-center justify-center xl:flex-row xl:mb-10 max-h-screen min-h-[85vh] max-w-screen"
+          className="flex flex-col items-center justify-center py-4 border-b-2 border-opacity-50 border-nord3 xl:flex-row"
         >
-          <h1 className="px-16 mb-8 text-5xl font-bold lg:text-7xl 2xl:text-8xl text-gradient bg-nord-gradient selection:bg-opacity-40">
+          <h1 className="px-16 mb-8 text-5xl font-bold text-center lg:text-7xl 2xl:text-8xl text-gradient bg-nord-gradient selection:bg-opacity-40 2xl:text-left">
             {data.home.heading}
           </h1>
-          <div className="flex items-center justify-center gap-2 px-24 text-xl xl:text-2xl xl:gap-6 xl:flex-col xs:flex-col sm:flex-row 2xl:text-4xl dark:text-nord8">
-            <a
-              href="#about"
-              className="p-3 duration-500 rounded hover:bg-nord-gradient hover:dark:text-nord0 hover:text-nord4 hover:transition-all"
-            >
+          <div className="flex items-center justify-center gap-4 px-24 text-xl xl:text-2xl xl:gap-6 xl:flex-col xs:flex-col sm:flex-row 2xl:text-4xl dark:text-nord8">
+            <a href="#about" className="p-1 link-underline">
               {data.navbar.about}
             </a>{" "}
-            <span className="lg:hidden hidden sm:block">&middot;</span>{" "}
-            <a
-              href="#projects"
-              className="p-3 duration-500 rounded hover:bg-nord-gradient hover:dark:text-nord0 hover:text-nord4 hover:transition-all"
-            >
+            <span className="hidden lg:hidden sm:block">&middot;</span>{" "}
+            <a href="#projects" className="p-1 link-underline">
               {data.navbar.projects}
             </a>{" "}
-            <span className="lg:hidden hidden sm:block">&middot;</span>{" "}
-            <a
-              href="#connect"
-              className="p-3 duration-500 rounded hover:bg-nord-gradient hover:dark:text-nord0 hover:text-nord4 hover:transition-all"
-            >
+            <span className="hidden lg:hidden sm:block">&middot;</span>{" "}
+            <a href="#connect" className="p-1 link-underline">
               {data.navbar.connect}
             </a>
           </div>
-        </main>
+        </section>
 
         {/* About */}
         <section id="about">
-          <h1 className="text-4xl">About Me</h1>
           {data.about.body.map((paragraph, index) => (
             <p key={index}>{paragraph.content}</p>
           ))}
@@ -58,24 +41,34 @@ export default function Home({ data }) {
         {/* Projects */}
         <section id="projects">
           <h1 className="text-4xl">Projects</h1>
-          <div className="flex justify-between flex-wrap gap-2">
+          <div className="flex flex-wrap justify-between gap-2">
             {data.projects.map((project, index) => (
               <ProjectCard project={project} key={index} />
             ))}
           </div>
+          <p>
+            ... and more on my{" "}
+            <a
+              href={data.links.github}
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              {data.connect.github}
+            </a>
+          </p>
         </section>
 
         {/* Connect */}
         <section id="connect" className="mt-8">
           <h1 className="text-4xl">{data.connect.title}</h1>
-          <p>{data.connect.info}</p>
-          <ul>
-            <li className="my-3">
+          <ul className="flex flex-col gap-4 p-0">
+            <li>
               <AtSign className="inline mr-4" />
               {data.connect.email}
             </li>
-            <li className="my-3">
-              <MessageCircle className="inline mr-4" />
+            <li>
+              <Send className="inline mr-4" />
               <a
                 href={data.links.telegram}
                 target="_blank"
@@ -85,7 +78,7 @@ export default function Home({ data }) {
                 {data.connect.telegram}
               </a>
             </li>
-            <li className="my-3">
+            <li>
               <Twitter className="inline mr-4" />
               <a
                 href={data.links.twitter}
@@ -96,7 +89,7 @@ export default function Home({ data }) {
                 {data.connect.twitter}
               </a>
             </li>
-            <li className="my-3">
+            <li>
               <PenTool className="inline mr-4" />
               <a
                 href={data.links.dev}
@@ -107,7 +100,7 @@ export default function Home({ data }) {
                 {data.connect.blog}
               </a>
             </li>
-            <li className="my-3">
+            <li>
               <GitHub className="inline mr-4" />
               <a
                 href={data.links.github}
@@ -122,7 +115,7 @@ export default function Home({ data }) {
         </section>
 
         {/* Footer */}
-        <footer className="py-4 text-center border-t border-nord3 border-opacity-30">
+        <footer className="py-4 font-mono text-center border-t border-nord3 border-opacity-30">
           {data.footer.body[0]}
           <a
             href="https://www.nordtheme.com/"
@@ -142,8 +135,8 @@ export default function Home({ data }) {
             Source code
           </a>
         </footer>
-      </div>
-    </div>
+      </main>
+    </>
   );
 }
 
