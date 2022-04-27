@@ -10,18 +10,18 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* Navbar title */}
         <h1 className="text-2xl dark:text-nord8 text-nord3">
-          <a href="#home">{data.navbar.name}</a>
+          <a href="/">{data.navbar.name}</a>
         </h1>
 
         {/* Primary nav */}
         <ul className="flex items-center gap-2 px-4 justify-self-end">
-          <NavbarItem title="About" href={"#about"}>
+          <NavbarItem title="About" href={"about"}>
             <Info />
           </NavbarItem>
-          <NavbarItem title="Projects" href={"#projects"}>
+          <NavbarItem title="Projects" href={"projects"}>
             <Code />
           </NavbarItem>
-          <NavbarItem title="Connect" href={"#connect"}>
+          <NavbarItem title="Connect" href={"connect"}>
             <Mail />
           </NavbarItem>
           <span className="opacity-50 select-none">|</span>

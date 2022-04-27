@@ -12,9 +12,9 @@ const Footer = () => {
         target="_blank"
         className="link"
       >
-        Nord <Heart className="inline" />
+        Nord
       </a>
-      {data.footer.body[1]}{" "}
+      {data.footer.body[1]} (
       <a
         href={data.links.repo}
         className="link"
@@ -23,6 +23,7 @@ const Footer = () => {
       >
         Source code
       </a>
+      )
     </footer>
   );
 };
