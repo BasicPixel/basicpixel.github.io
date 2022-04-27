@@ -1,7 +1,9 @@
 import { GitHub, Info, Code, Mail, Type } from "react-feather";
-import NavbarItem from "./NavbarItem";
 
-const Navbar = ({ data }) => {
+import NavbarItem from "./NavbarItem";
+import data from "public/en.json";
+
+const Navbar = () => {
   return (
     <nav className="sticky top-0 w-full p-3 overflow-hidden border-b md:px-16 border-opacity-40 backdrop-blur-md border-nord3">
       {/* Flex container */}

@@ -1,5 +1,11 @@
 import Head from "next/head";
-import "../styles/globals.css";
+
+import "@fontsource/space-mono";
+import "@fontsource/space-grotesk";
+
+import Navbar from "components/Navbar";
+import "styles/globals.css";
+import Footer from "components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,12 +15,6 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="I'm Osama AlQudah (BasicPixel), a full-stack web developer"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin
-        ></link>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -35,9 +35,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <title>BasicPixel</title>
       </Head>
-      <body>
-        <Component {...pageProps} />
-      </body>
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
     </div>
   );
 }
