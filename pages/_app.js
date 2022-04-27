@@ -3,9 +3,9 @@ import Head from "next/head";
 import "@fontsource/space-mono";
 import "@fontsource/space-grotesk";
 
-import Navbar from "components/Navbar";
+import Navbar from "components/layout/Navbar";
 import "styles/globals.css";
-import Footer from "components/Footer";
+import Footer from "components/layout/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -35,9 +35,13 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <title>BasicPixel</title>
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="flex flex-col h-screen">
+        <Navbar />
+        <main className="container flex-1 p-4 mx-auto xl:w-1/2 md:w-2/3 sm:w-screen">
+          <Component {...pageProps} />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
