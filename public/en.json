@@ -96,6 +96,6 @@
     "github": "Github"
   },
   "footer": {
-    "body": ["Made with ", ", Next.js and Tailwind."]
+    "body": ["Made with a ⌨️, ", ", Next and Tailwind."]
   }
 }
