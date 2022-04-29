@@ -6,6 +6,7 @@ This repository contains the source code for my personal portfolio / website.
 
 - Next.js
 - TailwindCSS
+- framer-motion for page transitions
 - Nord color pallete
 - Hosted on GitHub pages
 
