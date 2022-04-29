@@ -39,7 +39,7 @@ export async function getStaticProps() {
         `https://api.github.com/repos/${data.projects[i]}`,
         {
           headers: {
-            Authorization: `token ${process.env.GITHUB_OAUTH_TOKEN}`,
+            Authorization: `token ${process.env.API_OAUTH_TOKEN}`,
           },
         }
       );
