@@ -21,6 +21,10 @@ a {
   font-family: "Space Mono", source-code-pro, monospace;
 }
 
+.font-sans {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 @layer base {
   html,
   body {
@@ -28,17 +32,17 @@ a {
   }
 
   body {
-    @apply overflow-clip dark:bg-nord0 dark:text-nord4 bg-nord4 text-nord0 dark:selection:bg-nord7 selection:bg-nord9 selection:text-nord1 selection:bg-opacity-75;
+    @apply dark:bg-nord0 dark:text-nord4 bg-nord4 text-nord0 dark:selection:bg-nord7 selection:bg-nord9 selection:text-nord1 selection:bg-opacity-75;
   }
 
   section,
   main {
-    @apply px-[auto] my-4;
+    @apply px-[auto];
   }
 
   section p,
   section ul {
-    @apply py-2 font-mono text-xl;
+    @apply py-2 font-mono;
   }
 
   section h1 {
@@ -51,6 +55,10 @@ a {
 
   .link {
     @apply underline underline-offset-2 dark:text-nord8 text-nord3;
+  }
+
+  .text-secondary {
+    @apply text-gray-500 dark:text-gray-400;
   }
 }
 

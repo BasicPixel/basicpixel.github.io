@@ -1,27 +1,19 @@
+import CustomLink from "components/common/CustomLink";
+import PageTransition from "components/common/PageTransition";
 import data from "public/en.json";
 
 export default function Home() {
   return (
-    <section
-      id="home"
-      className="flex flex-col items-center justify-center h-full xl:flex-row"
-    >
-      <h1 className="px-16 mb-8 text-5xl font-bold text-center lg:text-7xl 2xl:text-8xl text-gradient bg-nord-gradient selection:bg-opacity-40 xl:text-left">
+    <PageTransition className="flex flex-col items-center justify-center h-full gap-4">
+      <h1 className="mb-8 font-mono text-4xl font-bold text-center md:text-5xl lg:text-7xl 2xl:text-8xl text-gradient bg-nord-gradient selection:bg-opacity-40">
         {data.home.heading}
       </h1>
-      <div className="flex items-center justify-center gap-4 px-24 text-xl xl:text-2xl xl:gap-6 xl:flex-col xs:flex-col sm:flex-row 2xl:text-4xl dark:text-nord8">
-        <a href="about" className="p-1 link-underline">
-          {data.navbar.about}
-        </a>{" "}
-        <span className="hidden lg:hidden sm:block">&middot;</span>{" "}
-        <a href="projects" className="p-1 link-underline">
-          {data.navbar.projects}
-        </a>{" "}
-        <span className="hidden lg:hidden sm:block">&middot;</span>{" "}
-        <a href="connect" className="p-1 link-underline">
-          {data.navbar.connect}
-        </a>
+      <div className="flex items-center justify-center gap-4 text-xl lg:gap-6 xl:gap-8 lg:text-2xl 2xl:text-5xl dark:text-nord8">
+        <CustomLink href="/about">{data.navbar.about}</CustomLink>
+        <CustomLink href="/projects">{data.navbar.projects}</CustomLink>
+        <CustomLink href="/connect">{data.navbar.connect}</CustomLink>
+        <CustomLink href="/blog">{data.navbar.blog}</CustomLink>
       </div>
-    </section>
+    </PageTransition>
   );
 }

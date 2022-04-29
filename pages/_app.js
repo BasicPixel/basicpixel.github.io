@@ -6,10 +6,11 @@ import "@fontsource/space-grotesk";
 import Navbar from "components/layout/Navbar";
 import "styles/globals.css";
 import Footer from "components/layout/Footer";
+import { AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <>
       <Head>
         <meta
           name="description"
@@ -37,12 +38,14 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div className="flex flex-col h-screen">
         <Navbar />
-        <main className="container flex-1 p-4 mx-auto xl:w-1/2 md:w-2/3 sm:w-screen">
-          <Component {...pageProps} />
-        </main>
+        <AnimatePresence exitBeforeEnter>
+          <main className="container flex-1 w-screen p-4 mx-auto xl:w-2/3 md:w-3/4">
+            <Component {...pageProps} />
+          </main>
+        </AnimatePresence>
         <Footer />
       </div>
-    </div>
+    </>
   );
 }
 

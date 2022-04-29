@@ -3,89 +3,32 @@
     "github": "https://github.com/BasicPixel",
     "repo": "https://github.com/BasicPixel/basicpixel.github.io",
     "twitter": "https://twitter.com/pQudah",
-    "dev": "https://dev.to/basicpixel",
     "telegram": "https://t.me/qudah"
   },
   "navbar": {
     "name": "BasicPixel",
     "about": "About",
     "projects": "Projects",
-    "connect": "Connect"
+    "connect": "Connect",
+    "blog": "Blog"
   },
   "home": {
-    "heading": "I am BasicPixel, a web developer."
+    "heading": "I'm Osama, a web developer."
   },
   "about": {
     "body": [
       {
-        "content": "Assalamu Alaikum 👋! I am Osama AlQudah (BasicPixel), a 16-year-old self-taught full-stack web developer from Jordan. I am experienced in front-end and back-end web development with Next.js, Django, React, Firebase and more. A proud CS50 student."
+        "content": "Assalamu Alaikum 👋! I am Osama AlQudah (BasicPixel), a 16-year-old self-taught full-stack web developer from Jordan, experienced in Next.js, Django, React, Supabase and more, and a proud CS50 student."
       }
     ]
   },
   "projects": [
-    {
-      "name": "⭐ typistt",
-      "desc": "Simple typing practice / test website with different modes and settings",
-      "demo": "https://typistt.vercel.app/",
-      "repo": "https://github.com/BasicPixel/typistt",
-      "stack": "react, tailwind"
-    },
-    {
-      "name": "⭐ django-commerce",
-      "desc": "Fake e-commerce website",
-      "demo": "https://django-techshop.herokuapp.com/",
-      "repo": "https://github.com/BasicPixel/django-commerce",
-      "stack": "django"
-    },
-    {
-      "name": "⭐ django-network",
-      "desc": "Fake social network",
-      "demo": "https://cs50web-network.herokuapp.com/",
-      "repo": "https://github.com/BasicPixel/django-network",
-      "stack": "django"
-    },
-    {
-      "name": "bloggr",
-      "desc": "Markdown-supported anonymous blog with simplicity and power",
-      "demo": "https://bloggr.vercel.app/",
-      "repo": "https://github.com/BasicPixel/bloggr",
-      "stack": "next, tailwind, django-rest-framework"
-    },
-    {
-      "name": "iffa-quotes",
-      "desc": "App for random Islamic quotes (in Arabic) with the ability to submit quotes",
-      "demo": "https://iffa-quotes.vercel.app/",
-      "repo": "https://github.com/BasicPixel/iffa-quotes-frontend",
-      "stack": "react, tailwind, django-rest-framework"
-    },
-    {
-      "name": "task50",
-      "desc": "Simple and elegant to-do list, and my first project.",
-      "demo": "https://basicpixel.github.io/task50/",
-      "repo": "https://github.com/BasicPixel/task50",
-      "stack": "html, css, js"
-    },
-    {
-      "name": "django-mail",
-      "desc": "Fake mail client.",
-      "demo": "https://cs50w-mail.herokuapp.com/",
-      "repo": "https://github.com/BasicPixel/django-mail",
-      "stack": "django"
-    },
-    {
-      "name": "mdwiki",
-      "desc": "Wikipedia-like website with Markdown support.",
-      "demo": "https://django-md-wiki.herokuapp.com/",
-      "repo": "https://github.com/BasicPixel/mdwiki",
-      "stack": "django"
-    },
-    {
-      "name": "django-notes",
-      "desc": "Note-taking and todo list web app.",
-      "demo": "https://github.com/BasicPixel/django-notes",
-      "repo": "https://github.com/BasicPixel/django-notes",
-      "stack": "django"
-    }
+    "BasicPixel/typistt",
+    "BasicPixel/django-commerce",
+    "BasicPixel/django-network",
+    "BasicPixel/task50",
+    "BasicPixel/iffa-quotes-frontend",
+    "fiqhsearch/web"
   ],
   "connect": {
     "title": "Connect",
