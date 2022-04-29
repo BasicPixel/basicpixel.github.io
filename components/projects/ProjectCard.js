@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const ProjectCard = ({ project }) => {
+  const name =
+    project.owner.login !== "BasicPixel" ? project.full_name : project.name;
+
   return (
     <motion.div
       className="flex flex-col justify-between w-full gap-2 p-4 font-mono text-lg border-2 border-opacity-50 rounded shadow-lg border-nord3 dark:border-opacity-100"
@@ -21,7 +24,7 @@ const ProjectCard = ({ project }) => {
       exit={{ opacity: 0 }}
     >
       <div className="flex justify-between">
-        <h2 className="font-sans text-2xl">{project.name} </h2>
+        <h2 className="font-sans text-2xl">{name}</h2>
         <span className="flex flex-row items-center gap-2 text-2xl">
           <a
             href={project.homepage}
