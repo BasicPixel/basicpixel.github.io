@@ -1,12 +1,24 @@
-const SocialLink = ({ href, children, targetSelf, iconSize = "2xl" }) => {
+const SocialLink = ({
+  href,
+  children,
+  targetSelf,
+  iconSize = "2xl",
+  label,
+}) => {
   return (
     <a
       href={href}
       target={targetSelf ? "_self" : "_blank"}
       rel="noreferrer"
-      className="p-2 transition-all duration-200 rounded hover:bg-nord2"
+      className={"p-2 rounded"}
+      aria-label={label}
+      title={label}
     >
-      <button className={`text-${iconSize}`}>{children}</button>
+      <button
+        className={`text-${iconSize} transition-all duration-300 hover:text-nord10 dark:hover:text-nord8`}
+      >
+        {children}
+      </button>
     </a>
   );
 };
