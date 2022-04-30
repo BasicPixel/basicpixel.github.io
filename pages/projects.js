@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import PageTransition from "components/common/PageTransition";
 import ProjectCard from "components/projects/ProjectCard";
 import data from "public/en.json";
@@ -14,9 +16,13 @@ const ProjectsPage = ({ projects }) => {
 
       <div className="mt-6 mb-2 text-center">
         <a href={data.links.github} target="_blank" rel="noreferrer">
-          <button className="px-4 py-2 text-lg rounded text-nord3 outline-nord3 dark:text-nord8 outline outline-1 dark:outline-nord8">
+          <motion.button
+            className="px-4 py-2 text-lg rounded text-nord3 outline-nord3 dark:text-nord8 outline outline-1 dark:outline-nord8"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
             More on GitHub
-          </button>
+          </motion.button>
         </a>
       </div>
     </PageTransition>

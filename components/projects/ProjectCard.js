@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { fadeInUp } from "src/animations";
 
 const ProjectCard = ({ project, delay }) => {
   const name =
@@ -8,11 +9,7 @@ const ProjectCard = ({ project, delay }) => {
   return (
     <motion.div
       className="flex flex-col justify-between w-full gap-2 p-4 font-mono text-lg border-2 border-opacity-50 rounded shadow-lg border-nord3 dark:border-opacity-100"
-      initial={{
-        y: 50,
-        opacity: 0,
-        transition: { duration: 0.5, ease: "easeInOut" },
-      }}
+      initial={"initial"}
       animate={{
         y: 0,
         opacity: 1,
@@ -22,7 +19,9 @@ const ProjectCard = ({ project, delay }) => {
           delay: delay,
         },
       }}
-      exit={{ opacity: 0 }}
+      exit={"exit"}
+      variants={fadeInUp}
+      whileHover={{ scale: 1.02 }}
     >
       <div className="flex justify-between">
         <h2 className="font-sans text-2xl">{name}</h2>
