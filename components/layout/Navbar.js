@@ -17,14 +17,8 @@ const Navbar = () => {
 
         {/* Primary nav */}
         <ul className="flex gap-2">
-          <NavbarItem title="About" href={"/about"}>
-            <FiInfo />
-          </NavbarItem>
           <NavbarItem title="Projects" href={"/projects"}>
             <FiCode />
-          </NavbarItem>
-          <NavbarItem title="Connect" href={"/connect"}>
-            <FiMail />
           </NavbarItem>
           <NavbarItem href={"/blog"} title="Blog">
             <FiFileText />
