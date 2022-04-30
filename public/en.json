@@ -3,7 +3,8 @@
     "github": "https://github.com/BasicPixel",
     "repo": "https://github.com/BasicPixel/basicpixel.github.io",
     "twitter": "https://twitter.com/pQudah",
-    "telegram": "https://t.me/qudah"
+    "telegram": "https://t.me/qudah",
+    "email": "mailto:osama.mo.qudah@gmail.com"
   },
   "navbar": {
     "name": "BasicPixel",
@@ -15,13 +16,7 @@
   "home": {
     "heading": "I'm Osama, a web developer."
   },
-  "about": {
-    "body": [
-      {
-        "content": "Assalamu Alaikum 👋! I am Osama AlQudah (BasicPixel), a 16-year-old self-taught full-stack web developer from Jordan, experienced in Next.js, Django, React, Supabase and more, and a proud CS50 student."
-      }
-    ]
-  },
+  "about": "Assalamu Alaikum 👋! I am Osama AlQudah (BasicPixel), 16-year-old self-taught web developer from Jordan, experienced in Next, Django, React, Supabase and more, and a proud CS50 student.",
   "projects": [
     "BasicPixel/typistt",
     "BasicPixel/django-commerce",
