@@ -5,6 +5,8 @@ name: Node.js CI
 
 env:
   API_OAUTH_TOKEN: ${{ secrets.API_OAUTH_TOKEN }}
+  NOTION_SECRET: ${{ secrets.NOTION_SECRET }}
+  NOTION_TOKEN_V2: ${{ secrets.NOTION_TOKEN_V2 }}
 
 on:
   push:
