@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       )}
 
-      <div>
+      <p className="px-4">
         {data.footer.body[0]}
         <a
           href="https://www.nordtheme.com/"
@@ -66,7 +66,7 @@ const Footer = () => {
           Source code
         </a>
         )
-      </div>
+      </p>
     </footer>
   );
 };
