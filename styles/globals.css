@@ -45,10 +45,6 @@ a {
     @apply py-2 font-mono;
   }
 
-  section h1 {
-    @apply mb-6;
-  }
-
   .bg-nord-gradient {
     @apply bg-gradient-to-r dark:from-nord14 dark:to-nord10 from-nord1 to-nord10;
   }
