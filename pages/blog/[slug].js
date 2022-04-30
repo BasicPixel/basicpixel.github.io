@@ -48,13 +48,15 @@ export const getStaticPaths = async () => {
   });
 
   // Set paths to the list of child pages of the parent blog page
-  const paths = data.results.map((result) => {
+  const paths = [];
+
+  data.results.forEach((result) => {
     if (result.type === "child_page") {
-      return {
+      paths.push({
         params: {
           slug: slugify(result.child_page.title).toLowerCase(),
         },
-      };
+      });
     }
   });
 
