@@ -1,29 +1,23 @@
-import { motion } from "framer-motion";
-
 import PageTransition from "components/common/PageTransition";
 import ProjectCard from "components/projects/ProjectCard";
 import data from "public/en.json";
+import CardGrid from "components/common/CardGrid";
+import CtaButton from "components/common/CtaButton";
 
 const ProjectsPage = ({ projects }) => {
   return (
     <PageTransition>
-      <h1 className="text-4xl">Some things I've built</h1>
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-        {projects.map((project, index) => (
-          <ProjectCard project={project} key={index} delay={index * 0.1} />
-        ))}
-      </div>
+      <div className="flex flex-col gap-6 py-4">
+        <h1 className="m-0 text-4xl">Some things I've built</h1>
+        <CardGrid>
+          {projects.map((project, index) => (
+            <ProjectCard project={project} key={index} delay={index * 0.1} />
+          ))}
+        </CardGrid>
 
-      <div className="mt-6 mb-2 text-center">
-        <a href={data.links.github} target="_blank" rel="noreferrer">
-          <motion.button
-            className="px-4 py-2 text-lg rounded text-nord3 outline-nord3 dark:text-nord8 outline outline-1 dark:outline-nord8"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            More on GitHub
-          </motion.button>
-        </a>
+        <div className="text-center">
+          <CtaButton href={data.links.github}>More on GitHub</CtaButton>
+        </div>
       </div>
     </PageTransition>
   );
