@@ -1,13 +1,28 @@
 import { Client } from "@notionhq/client";
 
 import PageTransition from "components/common/PageTransition";
+import PostCard from "components/blog/PostCard";
+import CardGrid from "components/common/CardGrid";
+import CtaButton from "components/common/CtaButton";
+import { blogPageId, notionBlogLink } from "src/constants";
 
 const BlogPage = ({ posts }) => {
   return (
     <PageTransition>
-      <h1 className="text-4xl">Blog</h1>
-      <p className="text-xl text-secondary">Coming soon...</p>
-      <pre>{JSON.stringify(posts, null, 2)}</pre>
+      <div className="flex flex-col gap-4 py-4">
+        <div className="flex items-center justify-between">
+          <h1 className="m-0 text-4xl">Blog</h1>
+          <CtaButton href={notionBlogLink}>Open in Notion</CtaButton>
+        </div>
+
+        <CardGrid>
+          {posts.map((post, index) => {
+            return (
+              <PostCard key={post} post={post} transitionDelay={index * 0.1} />
+            );
+          })}
+        </CardGrid>
+      </div>
     </PageTransition>
   );
 };
@@ -18,14 +33,13 @@ export const getStaticProps = async () => {
   });
 
   const data = await notion.blocks.children.list({
-    block_id: process.env.PAGE_ID,
+    block_id: blogPageId,
   });
 
-  const posts = [];
-
-  data.results
+  // Get list of posts, by filtering children blocks to only those that are pages
+  const posts = data.results
     .filter((result) => result.type === "child_page")
-    .forEach((result) => posts.push(result.child_page.title));
+    .map((result) => result.child_page.title);
 
   return { props: { posts } };
 };
