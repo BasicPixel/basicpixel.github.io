@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import { FiTwitter, FiGithub } from "react-icons/fi";
+import { FiTwitter, FiGithub, FiMail } from "react-icons/fi";
 import { FaTelegramPlane } from "react-icons/fa";
 
 import SocialLink from "components/common/SocialLink";
@@ -14,14 +14,33 @@ const Footer = () => {
       {router.asPath !== "/connect" && (
         <div>
           <ul className="flex flex-row justify-center gap-2 p-0">
-            <SocialLink iconSize="2xl" href={data.links.telegram}>
+            <SocialLink
+              label="Telegram link"
+              iconSize="2xl"
+              href={data.links.telegram}
+            >
               <FaTelegramPlane />
             </SocialLink>
-            <SocialLink iconSize="2xl" href={data.links.twitter}>
+            <SocialLink
+              label="Twitter link"
+              iconSize="2xl"
+              href={data.links.twitter}
+            >
               <FiTwitter />
             </SocialLink>
-            <SocialLink iconSize="2xl" href={data.links.github}>
+            <SocialLink
+              label="GitHub link"
+              iconSize="2xl"
+              href={data.links.github}
+            >
               <FiGithub />
+            </SocialLink>
+            <SocialLink
+              label="Send mail"
+              iconSize="2xl"
+              href={data.links.email}
+            >
+              <FiMail />
             </SocialLink>
           </ul>
         </div>
