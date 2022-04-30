@@ -8,9 +8,7 @@
   },
   "navbar": {
     "name": "BasicPixel",
-    "about": "About",
     "projects": "Projects",
-    "connect": "Connect",
     "blog": "Blog"
   },
   "home": {
@@ -25,14 +23,6 @@
     "BasicPixel/iffa-quotes-frontend",
     "fiqhsearch/web"
   ],
-  "connect": {
-    "title": "Connect",
-    "email": "osama.mo.qudah@gmail.com",
-    "telegram": "Telegram",
-    "twitter": "Twitter",
-    "blog": "Blog",
-    "github": "Github"
-  },
   "footer": {
     "body": ["Made with a ⌨️, ", ", Next and Tailwind."]
   }
