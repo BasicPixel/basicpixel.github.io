@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, delay }) => {
   const name =
     project.owner.login !== "BasicPixel" ? project.full_name : project.name;
 
@@ -19,6 +19,7 @@ const ProjectCard = ({ project }) => {
         transition: {
           duration: 0.5,
           ease: "easeInOut",
+          delay: delay,
         },
       }}
       exit={{ opacity: 0 }}

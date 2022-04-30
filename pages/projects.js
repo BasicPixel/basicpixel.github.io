@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import PageTransition from "components/common/PageTransition";
 import ProjectCard from "components/projects/ProjectCard";
 import data from "public/en.json";
@@ -8,14 +6,11 @@ const ProjectsPage = ({ projects }) => {
   return (
     <PageTransition>
       <h1 className="text-4xl">Some things I've built</h1>
-      <motion.div
-        className="grid grid-cols-1 gap-4 lg:grid-cols-2"
-        animate={{ transition: { staggerChildren: 0.2 } }}
-      >
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {projects.map((project, index) => (
-          <ProjectCard project={project} key={index} />
+          <ProjectCard project={project} key={index} delay={index * 0.1} />
         ))}
-      </motion.div>
+      </div>
 
       <div className="mt-6 mb-2 text-center">
         <a href={data.links.github} target="_blank" rel="noreferrer">
