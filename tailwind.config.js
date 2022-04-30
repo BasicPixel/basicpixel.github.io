@@ -6,5 +6,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("tailwind-nord"), require("tailwind-scrollbar")],
+  plugins: [
+    require("tailwind-nord"),
+    require("tailwind-scrollbar"),
+    require("@tailwindcss/typography"),
+  ],
 };
