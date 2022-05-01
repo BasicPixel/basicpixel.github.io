@@ -93,7 +93,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
   const token = process.env.NOTION_TOKEN_V2;
 
   let post = {
-    url: pageData.url,
+    // Get the page url, replace notion.so with basicpixel.notion.site for it to be public
+    url: pageData.url.replace("www.notion.so", "basicpixel.notion.site"),
     title: pageData.properties.title.title[0].text.content,
     created_at: pageData.created_time,
     page: pageData,
