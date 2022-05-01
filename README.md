@@ -1,12 +1,18 @@
 # basicpixel.github.io
 
-This repository contains the source code for my personal portfolio / website.
+This repository contains the source code for my personal website - portfolio.
 
-### Created with:
+[Check it out here](https://basicpixel.github.io)
+
+![Lighthouse scores](public/images/lighthouse.png)
+
+### Tech stack
 
 - Next.js
 - TailwindCSS
 - framer-motion for page transitions
+- Notion as a CMS for the blog
+- react-markdown to display blog post contents
 - Nord color pallete
 - Hosted on GitHub pages
 
