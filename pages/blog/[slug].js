@@ -13,7 +13,7 @@ const PostPage = ({ post }) => {
     <PageTransition>
       <div className="flex flex-col max-w-xl gap-6 py-4 mx-auto">
         <div className="flex items-center justify-between">
-          <h1 className="text-5xl">{post.title}</h1>
+          <h1 className="text-5xl leading-relaxed">{post.title}</h1>
           <CtaButton href={post.url}>View in Notion</CtaButton>
         </div>
         <ul>

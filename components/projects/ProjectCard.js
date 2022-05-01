@@ -16,6 +16,7 @@ const ProjectCard = ({ project, delay }) => {
             target="_blank"
             rel="noreferrer"
             className="transition-all duration-300 hover:text-nord8"
+            aria-label={`${name} project homepage`}
           >
             <FiExternalLink />
           </a>
