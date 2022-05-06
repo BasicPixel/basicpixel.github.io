@@ -5,7 +5,7 @@ import { fadeInUp } from "src/animations";
 const Card = ({ children, transitionDelay }) => {
   return (
     <motion.div
-      className="flex flex-col justify-between w-full gap-2 p-4 font-mono text-lg border-2 border-opacity-50 rounded shadow-lg border-nord3 dark:border-opacity-100"
+      className="flex flex-col justify-between w-full gap-2 p-4 text-lg border-2 border-opacity-50 rounded shadow-lg border-nord3 dark:border-opacity-100"
       initial={"initial"}
       animate={{
         y: 0,

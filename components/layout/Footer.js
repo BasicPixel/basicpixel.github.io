@@ -10,7 +10,7 @@ const Footer = () => {
   const router = useRouter();
 
   return (
-    <footer className="flex flex-col gap-2 py-4 font-mono text-sm text-center border-t border-nord3 border-opacity-40">
+    <footer className="flex flex-col gap-2 py-4 text-sm text-center border-t border-nord3 border-opacity-40">
       {router.asPath !== "/connect" && (
         <div>
           <ul className="flex flex-row justify-center gap-2 p-0">
@@ -52,14 +52,14 @@ const Footer = () => {
           href="https://www.nordtheme.com/"
           rel="noreferrer"
           target="_blank"
-          className="link"
+          className="link-underline dark:text-nord8"
         >
           Nord
         </a>
         {data.footer.body[1]} (
         <a
           href={data.links.repo}
-          className="link"
+          className="link-underline dark:text-nord8"
           target="_blank"
           rel="noreferrer"
         >
