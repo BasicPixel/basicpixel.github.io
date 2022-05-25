@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pixel.is-a.dev
+
+# Sitemaps
+Sitemap: https://pixel.is-a.dev/sitemap.xml
