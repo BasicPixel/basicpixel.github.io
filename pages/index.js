@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <PageTransition className="flex flex-col items-center justify-center h-full max-w-3xl gap-4 p-8 mx-auto">
       <motion.h1
-        className="font-sans text-5xl font-bold text-center md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-gradient bg-nord-gradient selection:bg-opacity-40"
+        className="text-5xl font-bold text-center md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-gradient bg-nord-gradient selection:bg-opacity-40"
         id="headline"
       >
         {data.home.heading}

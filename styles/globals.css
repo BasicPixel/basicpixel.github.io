@@ -2,10 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+:root {
+  --font-base: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  --font-heading: "Space Grotesk", var(--font-base);
+  --font-body: "Inter", var(--font-base);
+
+  --font-mono: "Space Mono", source-code-pro, monospace;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
 }
 
 a {
@@ -17,20 +33,10 @@ a {
   box-sizing: border-box;
 }
 
-.font-mono {
-  font-family: "Space Mono", source-code-pro, monospace;
-}
-
-.font-sans {
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
-}
-
 @layer base {
   html,
   body {
-    @apply p-0 m-0 transition-all scroll-smooth scroll-p-20 scrollbar-thin scrollbar-thumb-nord3;
+    @apply p-0 m-0 transition-all scroll-smooth scroll-p-20 scrollbar-thin scrollbar-thumb-nord3 font-body;
   }
 
   body {
@@ -50,6 +56,15 @@ a {
   code,
   pre {
     @apply font-mono text-lg font-normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
   }
 
   .bg-nord-gradient {

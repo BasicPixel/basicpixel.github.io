@@ -1,7 +1,8 @@
 import Head from "next/head";
 
-import "@fontsource/space-mono";
+import "@fontsource/inter";
 import "@fontsource/space-grotesk";
+import "@fontsource/space-mono";
 
 import Navbar from "components/layout/Navbar";
 import "styles/globals.css";

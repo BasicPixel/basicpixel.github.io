@@ -9,7 +9,7 @@ const ProjectCard = ({ project, delay }) => {
   return (
     <Card transitionDelay={delay}>
       <div className="flex justify-between">
-        <h2 className="font-sans text-2xl">{name}</h2>
+        <h2 className="text-2xl">{name}</h2>
         <span className="flex flex-row items-center gap-2 text-2xl">
           <a
             href={project.homepage}

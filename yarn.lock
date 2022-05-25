@@ -44,6 +44,11 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@fontsource/inter@^4.5.10":
+  "integrity" "sha512-YOt2/K8yo25MVBjrTImHxVimmyZEt0GcrWp2w7O29sdFX9SJqbGlOqjFJ1wI5yBbP6AmTeimyPE0UC/jjFRoIA=="
+  "resolved" "https://registry.npmjs.org/@fontsource/inter/-/inter-4.5.10.tgz"
+  "version" "4.5.10"
+
 "@fontsource/space-grotesk@^4.5.5":
   "integrity" "sha512-uXluN+sSasyfqp7JZQ4a6HRMlLfLCQ6SH3Fdw3EyDVKoycaYTlP7uIlmHYJd3I23JxYk3pk8/uYlt5RrKAx92w=="
   "resolved" "https://registry.npmjs.org/@fontsource/space-grotesk/-/space-grotesk-4.5.5.tgz"
@@ -80,9 +85,14 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-win32-x64-msvc@12.1.5":
-  "integrity" "sha512-/SoXW1Ntpmpw3AXAzfDRaQidnd8kbZ2oSni8u5z0yw6t4RwJvmdZy1eOaAADRThWKV+2oU90++LSnXJIwBRWYQ=="
-  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.5.tgz"
+"@next/swc-linux-x64-gnu@12.1.5":
+  "integrity" "sha512-O2ErUTvCJ6DkNTSr9pbu1n3tcqykqE/ebty1rwClzIYdOgpB3T2MfEPP+K7GhUR87wmN/hlihO9ch7qpVFDGKw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-12.1.5.tgz"
+  "version" "12.1.5"
+
+"@next/swc-linux-x64-musl@12.1.5":
+  "integrity" "sha512-1eIlZmlO/VRjxxzUBcVosf54AFU3ltAzHi+BJA+9U/lPxCYIsT+R4uO3QksRzRjKWhVQMRjEnlXyyq5SKJm7BA=="
+  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.1.5.tgz"
   "version" "12.1.5"
 
 "@nodelib/fs.scandir@2.1.5":

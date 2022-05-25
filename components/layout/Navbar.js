@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FiGithub, FiInfo, FiCode, FiMail, FiFileText } from "react-icons/fi";
+import { FiGithub, FiCode, FiFileText } from "react-icons/fi";
 
 import NavbarItem from "./NavbarItem";
 import data from "public/en.json";

@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/inter": "^4.5.10",
     "@fontsource/space-grotesk": "^4.5.5",
     "@fontsource/space-mono": "^4.5.5",
     "@notionhq/client": "^1.0.4",
