@@ -14,6 +14,7 @@ This repository contains the source code for my personal website - portfolio.
 - Notion as a CMS for the blog
 - react-markdown to display blog post contents
 - Nord color pallete
+- next-sitemap
 - Hosted on GitHub pages
 
 ### Special Thanks to:
